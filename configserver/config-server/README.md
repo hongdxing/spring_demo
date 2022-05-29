@@ -1,4 +1,4 @@
-#private key 错误
+#private key 错误(Mac OS)
 - github 需要 ecdsa 而不是rsa
 - jgit 需要 PEM格式
 
