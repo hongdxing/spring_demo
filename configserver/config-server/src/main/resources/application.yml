@@ -1,0 +1,24 @@
+
+application:
+  name: config-server
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:lockeduan/javaconfigrepo.git
+          default-label: master
+          clone-on-start: true
+          ignore-local-ssh-settings: true
+          private-key: |
+                        -----BEGIN EC PRIVATE KEY-----
+                        MIHcAgEBBEIBMVhoWTMKx0IL/223OR8EZsDY2rEv9PCMHbelFhsdQIQH8qCCYtNk
+                        jbr8XLHVpeNqw1MMO/gd6GAjdQTV4yBZEYKgBwYFK4EEACOhgYkDgYYABAB3RRQ7
+                        QeZqfglOQgHtkRKv588brXsr2HivbWlERt2+8kyZ3FKaxQ/ewEAdjnRJUcfN95QJ
+                        btrgcE9sEjCh7M7l8AB2SrbVDDtcAllroB4V5yxb3bTEWY9dYgqzjUSAXGrQlEOT
+                        jb/LpsTE5q01UF2Ock5iYbEBl7MjvN0osbb8qXlAKw==
+                        -----END EC PRIVATE KEY-----
+
