@@ -2,7 +2,6 @@ package com.hongxing.springcloudstream.function;
 
 import com.hongxing.springcloudstream.dto.OrderDto;
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import java.util.function.Function;

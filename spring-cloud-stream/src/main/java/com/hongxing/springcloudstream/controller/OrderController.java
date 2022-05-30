@@ -23,6 +23,6 @@ public class OrderController {
         order.setAmount(5d);
         streamBridge.send("d-order-created", order);
         System.out.println("---request finished---");
-        return "";
+        return order.getId();
     }
 }
