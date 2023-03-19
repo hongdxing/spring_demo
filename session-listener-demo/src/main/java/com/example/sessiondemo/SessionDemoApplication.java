@@ -16,9 +16,10 @@ public class SessionDemoApplication {
 		SpringApplication.run(SessionDemoApplication.class, args);
 	}
 	
+	/*
 	@Bean
 	public HttpSessionListener mySessionListener() {
 		return new MySessionListener();
-	}
+	}*/
 
 }
